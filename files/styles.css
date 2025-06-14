@@ -48,7 +48,7 @@ nav a:hover {
 
 .hero {
   height: 100vh;
-  background: url('C:/Users/carlo/Pictures/TFG Laura/DSC09283.jpg') no-repeat center center/cover;
+  background: url('DSC09283.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +65,7 @@ nav a:hover {
 
 .parallax-section {
   height: 100vh;
-  background: url('C:/Users/carlo/Pictures/TFG Laura/DSC09292.jpg') no-repeat center center;
+  background: url('DSC09292.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
