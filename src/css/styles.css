@@ -1,0 +1,187 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+header h1 p {
+  color: white;
+  font-size: 0.6rem;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: rgb(255, 20, 20);
+  text-shadow: 2px 2px 6px black;
+  padding: 2rem;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: "Emblema One", system-ui;
+  color: rgb(255, 20, 20);
+  text-shadow: 2px 2px 6px black;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-right: 10vh;
+}
+
+.hero h3{
+  font-family: "Alex Brush", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 6px black;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.parallax-section {
+  height: 100vh;
+  background: url('../img/DSC09292.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  padding: 2rem;
+  padding-top: 70px;
+  text-align: center;
+}
+
+.parallax-section h3 {
+  font-size: 2.5rem;
+}
+
+footer {
+  background: #111;
+  color: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero h2, .hero h2, .parallax-section h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero h2, .hero h2, .parallax-section h3 {
+    font-size: 1.8rem;
+  }
+   .menu-toggle {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    border-top: 1px solid #333;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+     background: url('../img/hero_v.jpg') no-repeat center center/cover;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 0.6rem;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+}
