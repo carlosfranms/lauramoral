@@ -167,6 +167,9 @@ footer p {
 
 
 @media (max-width: 480px) {
+  header{
+     padding: 0.5rem 1rem;
+  }
   header h1 {
     font-size: 1rem;
   }
