@@ -141,6 +141,8 @@ footer p {
 @media (max-width: 1024px) {
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 2rem;
+  .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 2rem;
   }
 }
 
@@ -156,6 +158,8 @@ footer p {
     margin-top: 0.5rem;
   }
 
+  .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 1.6rem;
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 1.6rem;
   }
@@ -186,17 +190,21 @@ footer p {
 @media (max-width: 480px) {
   header h1 {
     font-size: 1rem;
+    font-size: 1rem;
   }
 
   .hero {
+     background: url('../img/090034.jpg') no-repeat center center/cover;
      background: url('../img/090034.jpg') no-repeat center center/cover;
   }
 
   nav a {
     font-size: 0,9rem;
+    font-size: 0,9rem;
   }
 
   .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 0.8rem;
     font-size: 0.8rem;
     writing-mode: vertical-lr;
     text-orientation: upright;
