@@ -141,8 +141,6 @@ footer p {
 @media (max-width: 1024px) {
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 2rem;
-  .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 2rem;
   }
 }
 
@@ -158,8 +156,6 @@ footer p {
     margin-top: 0.5rem;
   }
 
-  .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 1.6rem;
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 1.6rem;
   }
