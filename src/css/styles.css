@@ -9,13 +9,14 @@
 body, html {
   font-family: 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 1rem 2rem;
   z-index: 1000;
@@ -64,28 +65,24 @@ nav a:hover {
 .hero {
   height: 100vh;
   background: url('../img/hero.jpg') no-repeat fixed center/cover;
-  /* display: flex;
-  flex-direction: line;
-  align-items: center;
-  justify-content: right; */
   color: rgb(255, 20, 20);
   text-shadow: 2px 2px 6px black;
-  padding: 2rem;
-  padding-top: 70px;
-  text-align: center;
+  overflow-x: hidden;
 }
 
 .hero-content {
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  padding: 2rem;
+  text-align: right;
 }
 
 .hero-text {
-  width: 50%;
-  text-align: center;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero h2 {
@@ -94,8 +91,6 @@ nav a:hover {
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
   font-size: 3rem;
-
-  /* margin-right: 10vh; */
   letter-spacing: 0.9rem;
 }
 
@@ -107,6 +102,7 @@ nav a:hover {
   font-size: 3rem;
   letter-spacing: 0.1rem;
 }
+
 .parallax-section {
   height: 100vh;
   background: #eee;
@@ -159,7 +155,8 @@ footer p {
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 1.6rem;
   }
-   .menu-toggle {
+
+  .menu-toggle {
     display: block;
     align-self: flex-end;
   }
@@ -180,29 +177,31 @@ footer p {
     padding: 1rem;
     border-top: 1px solid #333;
   }
+.hero {
+    background: url('../img/090034.jpg') no-repeat center center/cover;
+  }
+  .hero-content {
+    justify-content: flex-end; /* abajo */
+    align-items: center;       /* centrado horizontal */
+    text-align: center;
+    padding-bottom: 4rem;
+  }
 }
-
 
 @media (max-width: 480px) {
   header h1 {
     font-size: 1rem;
-    font-size: 1rem;
   }
 
   .hero {
-     background: url('../img/090034.jpg') no-repeat center center/cover;
-     background: url('../img/090034.jpg') no-repeat center center/cover;
+    background: url('../img/090034.jpg') no-repeat center center/cover;
   }
 
   nav a {
-    font-size: 0,9rem;
-    font-size: 0,9rem;
+    font-size: 0.9rem;
   }
 
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 0.8rem;
-    font-size: 0.8rem;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
   }
 }
