@@ -63,14 +63,28 @@ nav a:hover {
 
 .hero {
   height: 100vh;
-  background: url('../img/hero.jpg') no-repeat center center/cover;
-  display: flex;
+  background: url('../img/hero.jpg') no-repeat fixed center/cover;
+  /* display: flex;
+  flex-direction: line;
   align-items: center;
-  justify-content: right;
+  justify-content: right; */
   color: rgb(255, 20, 20);
   text-shadow: 2px 2px 6px black;
   padding: 2rem;
   padding-top: 70px;
+  text-align: center;
+}
+
+.hero-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  width: 50%;
   text-align: center;
 }
 
@@ -80,7 +94,9 @@ nav a:hover {
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
   font-size: 3rem;
-  padding-right: 10vh;
+
+  /* margin-right: 10vh; */
+  letter-spacing: 0.9rem;
 }
 
 .hero h3{
@@ -89,10 +105,11 @@ nav a:hover {
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
   font-size: 3rem;
+  letter-spacing: 0.1rem;
 }
 .parallax-section {
   height: 100vh;
-  background: url('../img/DSC09292.jpg') no-repeat center center;
+  background: #eee;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -122,8 +139,8 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .hero h2, .hero h2, .parallax-section h3 {
-    font-size: 2.2rem;
+  .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 2rem;
   }
 }
 
@@ -139,8 +156,8 @@ footer p {
     margin-top: 0.5rem;
   }
 
-  .hero h2, .hero h2, .parallax-section h3 {
-    font-size: 1.8rem;
+  .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 1.6rem;
   }
    .menu-toggle {
     display: block;
@@ -172,15 +189,15 @@ footer p {
   }
 
   .hero {
-     background: url('../img/hero_v.jpg') no-repeat center center/cover;
+     background: url('../img/090034.jpg') no-repeat center center/cover;
   }
 
   nav a {
-    font-size: 0.9rem;
+    font-size: 0,9rem;
   }
 
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     writing-mode: vertical-lr;
     text-orientation: upright;
   }
