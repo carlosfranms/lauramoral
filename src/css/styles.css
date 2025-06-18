@@ -75,9 +75,9 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  height: 100%;
-  padding: 2rem;
-  text-align: right;
+  height: 100vh;
+  /* padding: 2rem; */
+  text-align: center;
 }
 
 .hero-text {
@@ -100,6 +100,7 @@ nav a:hover {
   font-weight: 400;
   font-size: 3rem;
   letter-spacing: 0.1rem;
+  /* margin-top: -1rem; */
 }
 
 .parallax-section {
