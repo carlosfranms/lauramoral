@@ -72,15 +72,16 @@ nav a:hover {
 
 .hero-content {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  /* justify-content: flex-end;
+  align-items: center; */
   height: 100vh;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 .hero-text{
-  max-width: 100%;
-  text-align: center;
+   text-align: center;
+    /* width: 80%; */
+    /* max-width: 600px; */
 }
 .hero-overlay {
   position: absolute;
@@ -92,13 +93,20 @@ nav a:hover {
   z-index: 0;
 }
 
+.hero-block-left{
+  flex: 0 0 50%;
+   
+}
 .hero-block {
+  flex: 0 0 50%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 2rem;
-  max-width: 800px;
-  width: 100%;
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+  justify-content: center;
+  align-items: center;
+  /* padding-right: 2rem; */
+  /* max-width: 800px; */
+  /* width: 100%; */
   z-index: 1; /* para que quede encima del overlay */
 }
 
@@ -111,9 +119,10 @@ nav a:hover {
   margin: 5rem;
   border-radius: 10px;
   font-size: 1rem;
-  /* max-width: 600px; */
-  text-align: left;
+  text-align: justify;
   line-height: 1.6;
+  box-sizing: border-box;
+  margin: 0rem 14rem 0rem 14rem;
   /* backdrop-filter: blur(2px); */
 }
 
@@ -122,8 +131,10 @@ nav a:hover {
   color: rgb(255, 20, 20);
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
-  font-size: 3rem;
-  letter-spacing: 0.9rem;
+  font-size: clamp(1.5rem,5vw,3rem);
+  letter-spacing: 0.8rem;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .hero h3{
@@ -256,10 +267,11 @@ footer p {
     background: url('../img/090034.jpg') no-repeat center center/cover;
   }
   .hero-content {
-    justify-content: flex-end; /* abajo */
+     flex-direction: column;
+    /* justify-content: flex-end; */
     align-items: center;       /* centrado horizontal */
     text-align: center;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
   }
 }
 
