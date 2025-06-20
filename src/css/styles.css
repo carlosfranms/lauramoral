@@ -201,6 +201,9 @@ footer p {
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 2rem;
   }
+  .hero-description {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -218,7 +221,7 @@ footer p {
     .hero-description {
     text-align: center;
     font-size: 0.95rem;
-    padding: 1rem;
+    padding: 0.6rem;
   }
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 1.8rem;
@@ -269,6 +272,9 @@ footer p {
     background: url('../img/090034.jpg') no-repeat center center/cover;
   }
 
+  .hero-description {
+    font-size: 0.5rem;
+  }
   nav a {
     font-size: 0.9rem;
   }
