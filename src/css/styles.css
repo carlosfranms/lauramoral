@@ -72,16 +72,24 @@ nav a:hover {
 
 .hero-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
   height: 100vh;
-  /* padding: 2rem; */
+  position: relative;
+  z-index: 1;
+}
+.hero-text{
+  max-width: 100%;
   text-align: center;
 }
-
-.hero-text {
-  max-width: 100%;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 0;
 }
 
 .hero-block {
@@ -91,14 +99,16 @@ nav a:hover {
   padding-right: 2rem;
   max-width: 800px;
   width: 100%;
+  z-index: 1; /* para que quede encima del overlay */
 }
 
 
+
 .hero-description {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.781);
   padding: 1.5rem;
-  margin-top: 2rem;
+  margin: 5rem;
   border-radius: 10px;
   font-size: 1rem;
   /* max-width: 600px; */
