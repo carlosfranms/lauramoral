@@ -108,7 +108,7 @@ nav a:hover {
   background: #eee;
   background-attachment: fixed;
   background-size: cover;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   color: white;
@@ -120,6 +120,36 @@ nav a:hover {
 
 .parallax-section h3 {
   font-size: 2.5rem;
+}
+
+.gallery-title h3 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
 footer {
@@ -142,7 +172,7 @@ footer p {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
   }
 
@@ -153,7 +183,11 @@ footer p {
   }
 
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+  .hero h2{
+    letter-spacing: 0.6rem;
   }
 
   .menu-toggle {
@@ -202,6 +236,14 @@ footer p {
   }
 
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
+
+  .hero h2{
+    letter-spacing: 0.4rem;
+  }
+  .gallery-title h3 {
+    font-size: 1.5rem;
+  }
+
 }
