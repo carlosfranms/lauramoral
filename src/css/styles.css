@@ -277,7 +277,7 @@ footer p {
   .hero-description{
     position: absolute;
     top: 50%;
-    left: -25%;
+    left: 0;
     max-width: 80vw;
     width: auto;
     height: auto;
