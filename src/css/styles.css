@@ -233,6 +233,7 @@ footer p {
     text-align: center;
     font-size: 0.95rem;
     padding: 0.6rem;
+    margin: 0rem;
   }
   .hero h2, .hero h3, .parallax-section h3 {
     font-size: 1.8rem;
