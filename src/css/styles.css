@@ -275,10 +275,14 @@ footer p {
   }
   .hero-description{
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 80vw;
-    height: 80vh;
+    top: 50%;
+    left: -25%;
+    width: auto;
+    height: auto;
+  }
+   .hero-description {
+    text-align: justify;
+    font-size: 0.6rem;
   }
 }
 
@@ -291,9 +295,7 @@ footer p {
     background: url('../img/090034.jpg') no-repeat center center/cover;
   }
 
-  .hero-description {
-    font-size: 0.1rem;
-  }
+ 
   nav a {
     font-size: 0.9rem;
   }
