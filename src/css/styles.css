@@ -229,7 +229,7 @@ footer p {
     margin-top: 0.5rem;
   }
 
-    .hero-description {
+  .hero-description {
     text-align: center;
     font-size: 0.95rem;
     padding: 0.6rem;
@@ -267,17 +267,27 @@ footer p {
 .hero {
     background: url('../img/090034.jpg') no-repeat center center/cover;
   }
-  .hero-content {
+.hero-content {
      flex-direction: column;
     /* justify-content: flex-end; */
     align-items: center;       /* centrado horizontal */
     text-align: center;
+
+    /* justify-content: space-between; */
     /* padding-bottom: 4rem; */
   }
+  .hero-block-left{
+    flex: 0 0 10%
+  }
+  .hero-block {
+    flex: 0 0 90%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .hero-description{
-    position: absolute;
-    top: 50%;
-    left: 0;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 0; */
     max-width: 80vw;
     width: auto;
     height: auto;
