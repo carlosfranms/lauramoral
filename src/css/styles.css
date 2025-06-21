@@ -99,32 +99,92 @@ nav a:hover {
 }
 .hero-block {
   flex: 0 0 50%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
-  justify-content: center;
   align-items: center;
-  /* padding-right: 2rem; */
-  /* max-width: 800px; */
-  /* width: 100%; */
-  z-index: 1; /* para que quede encima del overlay */
+  justify-content: center; /* centrado vertical */
+  z-index: 1;
+  height: 100vh;
 }
 
 
 
 .hero-description {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: rgba(255, 255, 255, 0.781);
-  padding: 1.5rem;
-  max-width: 80%;
+ position: absolute;
+  top: calc(50% + 5rem); /* aparece debajo del título */
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   font-size: 1rem;
   text-align: justify;
   line-height: 1.6;
-  box-sizing: border-box;
-  margin: 0rem 14rem 0rem 14rem;
-  /* backdrop-filter: blur(2px); */
+  overflow: hidden;
+  height: 1.5vh;
+  width: 1.5vw;
+  padding: 1.5rem;
+  margin: 0;
+  cursor: pointer;
+  transition: width 0.6s ease-in, height 0.6s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  z-index: 2;
+  max-width: 400px;
+  max-height: 600px;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* color: rgba(255, 255, 255, 0.781); */
+  /* padding: 1.5rem; */
+  /* max-width: 80%; */
+  /* border-radius: 10px; */
+  /* font-size: 1rem; */
+  /* text-align: justify; */
+  /* line-height: 1.6; */
+  /* box-sizing: border-box; */
+  /* margin: 0rem 14rem 0rem 14rem; */
+  
 }
+.hero-description p {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+.info-icon {
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.1s ease-in;
+  pointer-events: none;
+}
+
+
+/* Al pasar el ratón, se expande */
+/* EXPANSIÓN al hover */
+.hero-description:hover {
+  width: 80vw;
+  height: 30vh;
+}
+
+/* Mostrar texto al expandirse */
+.hero-description:hover p {
+   opacity: 1;
+}
+
+/* Ocultar el icono al expandirse */
+/* .hero-description:hover .info-icon { */
+  /* opacity: 1; */
+/* } */
+
+
+
 
 .hero h2 {
   font-family: "Emblema One", system-ui;
