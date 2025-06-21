@@ -228,7 +228,7 @@ footer p {
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
-  .hero-overlay´{
+  .hero-overlay{
     width: 0;
   }
   .hero-description {
@@ -307,9 +307,6 @@ footer p {
 
   .hero {
     background: url('../img/090034.jpg') no-repeat center center/cover;
-  }
-  .hero-overlay{
-    width: 0;
   }
  
   nav a {
