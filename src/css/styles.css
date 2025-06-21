@@ -228,7 +228,9 @@ footer p {
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
-
+  .hero-overlay´{
+    width: 0;
+  }
   .hero-description {
     text-align: center;
     font-size: 0.95rem;
@@ -306,7 +308,9 @@ footer p {
   .hero {
     background: url('../img/090034.jpg') no-repeat center center/cover;
   }
-
+  .hero-overlay{
+    width: 0;
+  }
  
   nav a {
     font-size: 0.9rem;
