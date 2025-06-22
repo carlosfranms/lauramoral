@@ -16,7 +16,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
   color: white;
   padding: 1rem 2rem;
   z-index: 1000;
@@ -118,12 +118,14 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
   text-align: justify;
   line-height: 1.6;
   overflow: hidden;
   height: 1.5vh;
   width: 1.5vw;
+  max-width: 30vw;
+  max-height: 40vh;
   padding: 1.5rem;
   margin: 0;
   cursor: pointer;
@@ -132,36 +134,22 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* align-items: flex-start; */
-  /* justify-content: flex-start; */
   z-index: 2;
-  max-width: 400px;
-  max-height: 600px;
-  /* background-color: rgba(0, 0, 0, 0.3); */
-  /* color: rgba(255, 255, 255, 0.781); */
-  /* padding: 1.5rem; */
-  /* max-width: 80%; */
-  /* border-radius: 10px; */
-  /* font-size: 1rem; */
-  /* text-align: justify; */
-  /* line-height: 1.6; */
-  /* box-sizing: border-box; */
-  /* margin: 0rem 14rem 0rem 14rem; */
   
 }
+
 .hero-description p {
   opacity: 0;
-  transition: opacity 0.6s ease-in;
+  transition: opacity 1s ease-in;
   overflow: hidden;
   margin: 0;
-  
 }
 
 .info-icon {
   font-size: 1.2rem;
   color: white;
   opacity: 0.8;
-  transition: opacity 0.1s ease-in;
+  transition: opacity 0.6s height 0.6s ;
   pointer-events: none;
 }
 
@@ -169,19 +157,23 @@ nav a:hover {
 /* Al pasar el ratón, se expande */
 /* EXPANSIÓN al hover */
 .hero-description:hover {
-  width: 80vw;
-  height: 30vh;
+  width: 30vw;
+  height: 25vh;
 }
 
 /* Mostrar texto al expandirse */
 .hero-description:hover p {
    opacity: 1;
+   padding-right: 1rem; /* Ajusta según grosor del scrollbar */
+   overflow-y: auto;
 }
 
 /* Ocultar el icono al expandirse */
-/* .hero-description:hover .info-icon { */
-  /* opacity: 1; */
-/* } */
+.hero-description:hover .info-icon {
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.6s height 0.6s ;
+}
 
 
 
@@ -191,10 +183,12 @@ nav a:hover {
   color: rgb(255, 20, 20);
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
-  font-size: clamp(1.5rem,5vw,3rem);
-  letter-spacing: 0.8rem;
-  max-width: 100%;
-  word-wrap: break-word;
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
+  letter-spacing: clamp(0.2rem, 2vw, 0.8rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .hero h3{
@@ -202,8 +196,8 @@ nav a:hover {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
-  font-size: 3rem;
-  letter-spacing: 0.1rem;
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  text-align: center;
   /* margin-top: -1rem; */
 }
 
@@ -234,6 +228,7 @@ nav a:hover {
 }
 .gallery-title {
   flex: 0 0 50%;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -242,6 +237,15 @@ nav a:hover {
   color: white;
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px #000;
+}
+
+.gallery-title p {
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  text-align: justify;
+  color: #000000;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  overflow-y: auto;
 }
 
 .gallery {
@@ -350,9 +354,10 @@ footer p {
     left: auto;
     top: auto;
     width: 90%;
+    max-width: 100%;
     height: auto;
-    padding: 1rem;
-    margin-top: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
   }
 
   .hero-description p {
