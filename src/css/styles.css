@@ -281,12 +281,12 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .hero h2, .hero h3, .parallax-section h3 {
-    /* font-size: 2rem; */
-  }
-  .hero-description {
-    /* font-size: 0.8rem; */
-  }
+  /* .hero h2, .hero h3, .parallax-section h3 {
+    font-size: 2rem;
+  } */
+  /* .hero-description {
+     font-size: 0.8rem;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -373,13 +373,13 @@ footer p {
     /* padding: 0.6rem; */
     /* margin: 0rem; */
   /* } */
-  .hero h2, .hero h3, .parallax-section h3 {
-    /* font-size: 1.8rem; */
-  }
+  /* .hero h2, .hero h3, .parallax-section h3 {
+   
+  } */
 
-  .hero h2{
-    /* letter-spacing: 0.6rem; */
-  }
+  /* .hero h2{
+   
+  } */
   
 }
 
@@ -396,9 +396,8 @@ footer p {
     font-size: 0.9rem;
   }
 
-  .hero h2, .hero h3, .parallax-section h3 {
-    /* font-size: 1.2rem; */
-  }
+  /* .hero h2, .hero h3, .parallax-section h3 {
+     } */
 
   .hero h2{
     letter-spacing: 0.4rem;
