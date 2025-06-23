@@ -115,7 +115,7 @@ nav a:hover {
   word-break: break-word;
   overflow-wrap: break-word;
   text-align: center;
-  padding: 0 1rem;
+/*   padding: 0 1rem; */
 }
 
 .hero h3{
