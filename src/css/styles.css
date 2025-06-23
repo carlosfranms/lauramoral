@@ -344,7 +344,7 @@ footer p {
     flex-direction: column;
     justify-content: space-between;
   }
-
+/* 
    .hero-description {
     position: relative;
     transform: none;
@@ -364,7 +364,7 @@ footer p {
 
   .info-icon {
     display: none;
-  }
+  } */
   .hero-overlay{
     width: 0;
   }
