@@ -28,11 +28,11 @@ header {
 
 header h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.22vi + 0.94rem, 1.92rem);
 }
 header h1 p {
   color: white;
-  font-size: 0.6rem;
+  font-size: clamp(0.4rem, 0.34vi + 0.6rem, 1.19rem);
   margin-left: 1rem;
 }
 
@@ -72,16 +72,11 @@ nav a:hover {
 
 .hero-content {
   display: flex;
-  /* justify-content: flex-end;
-  align-items: center; */
   height: 100vh;
-  /* position: relative; */
   z-index: 1;
 }
 .hero-text{
    text-align: center;
-    /* width: 80%; */
-    /* max-width: 600px; */
 }
 .hero-overlay {
   position: absolute;
@@ -109,6 +104,29 @@ nav a:hover {
 }
 
 
+.hero h2 {
+  font-family: "Emblema One", system-ui;
+  color: rgb(255, 20, 20);
+  text-shadow: 2px 2px 6px black;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.2vi + 0.3rem, 10rem);
+  line-height: 1.8;
+  letter-spacing: clamp(0.2rem, 1.0vi, 0.8rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h3{
+  font-family: "Alex Brush", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 6px black;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  text-align: center;
+  /* margin-top: -1rem; */
+}
 
 .hero-description {
  position: absolute;
@@ -129,7 +147,7 @@ nav a:hover {
   padding: 1.5rem;
   margin: 0;
   cursor: pointer;
-  transition: width 0.6s ease-in, height 0.6s ease-in;
+  transition: width 0.4s ease-in, height 0.4s ease-in;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,28 +196,6 @@ nav a:hover {
 
 
 
-.hero h2 {
-  font-family: "Emblema One", system-ui;
-  color: rgb(255, 20, 20);
-  text-shadow: 2px 2px 6px black;
-  font-weight: 400;
-  font-size: clamp(1.5rem, 5vw, 2.8rem);
-  letter-spacing: clamp(0.2rem, 2vw, 0.8rem);
-  word-break: break-word;
-  overflow-wrap: break-word;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.hero h3{
-  font-family: "Alex Brush", cursive;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 6px black;
-  font-weight: 400;
-  font-size: clamp(1.2rem, 4vw, 2.2rem);
-  text-align: center;
-  /* margin-top: -1rem; */
-}
 
 .parallax-section {
   height: 100vh;
@@ -286,10 +282,10 @@ footer p {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
   .hero-description {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
 }
 
@@ -378,11 +374,11 @@ footer p {
     /* margin: 0rem; */
   /* } */
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .hero h2{
-    letter-spacing: 0.6rem;
+    /* letter-spacing: 0.6rem; */
   }
   
 }
@@ -401,7 +397,7 @@ footer p {
   }
 
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .hero h2{
