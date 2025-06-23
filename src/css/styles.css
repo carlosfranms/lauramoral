@@ -283,7 +283,7 @@ footer p {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 1rem;
+    /*font-size: 1rem;*/
   }
  .hero-description {
      font-size: 0.8rem;
