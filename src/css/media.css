@@ -4,6 +4,7 @@
      font-size: 0.8rem;
   } 
 }
+
 @media (max-width: 768px) {
   header {
     align-items: flex-start;
@@ -26,9 +27,11 @@
     background-color: rgba(255, 255, 255, 0.6);
     margin-top: 1rem;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .nav-links a {
     padding: 1rem;
     border-top: 1px solid #333;
@@ -52,6 +55,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
    .hero-description {
     top: calc(50% + 6rem); /* aparece debajo del título */
     font-size: clamp(0.55rem, 1.6vw, 0.8rem);
@@ -69,16 +73,19 @@
     /* padding: 0.5rem; */
     /* margin: 1rem; */
   }
+
   .hero-description:hover {
     width: 90%;
     max-width: 80vw;
     height: 25vh;
     }
+
   .hero-description:hover p {
     padding: 0rem;
     /* opacity: 1; */
     /* max-height: 1000px; */
   }
+
   .info-icon {
     /* display: none; */
   }
