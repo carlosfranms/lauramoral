@@ -6,6 +6,7 @@
   <title>Laura Moral</title>
   <link rel="stylesheet" href="src/css/styles.css" />
   <link rel="stylesheet" href="src/css/media.css" />
+  <link rel="stylesheet" href="src/css/keyframes.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
@@ -39,10 +40,10 @@
     <div class="hero-block-left"> </div>
     <div class="hero-block">
       <div class="hero-text">
-        <h2>INTERPOLACIONES<br><h3>Laura Moral Miranda</h3></h2>
+        <h2>INTERPOLACIONES</h2><br><h3>Laura Moral Miranda</h3>
       </div>
       <div class="hero-description">
-         <h1 class="info-icon">ⓘ</h1>
+         <p class="info-icon" alt="Descripción">ⓘ</p>
           <p>
             <strong>“Interpolaciones”</strong> es una instalación de arte textil donde se cruzan lo manual con lo conceptual, lo visible con lo oculto.
             Como en un tejido, las capas de memoria, materia y lenguaje se entrelazan, creando una obra que no solo se ve, sino que también se sostiene desde lo invisible.
@@ -65,7 +66,7 @@
   <section class="parallax-section" id="parallax">
   <div class="gallery-content">
     <div class="gallery-text">
-      <h3>Interpolaciones</h3>
+      <h2>Interpolaciones</h2>
       <br>
       <p>Desde mi infancia hay algo que ha estado presente, aunque no fuera consciente: elementos como fibras y telas anudan mi memoria, junto con las manos de mi abuela y madre que se movían sin descanso, enmarañando, tejiendo, hilando, creando figuras, texturas e historias en cada retal. Coser en mi casa nunca se ha visto como una tarea cotidiana, simbolizaba un acto de amor o de cuidado, ya sea hacia una misma o hacia el prójimo.</p>
     </div>
@@ -82,7 +83,7 @@
     </div>
     <div class="gallery-text">
       <p>
-Mis recuerdos más vívidos son estando con mi abuela mientras ella tejía y me contaba historias; conforme pasaban las horas, mi imaginación volaba y veía cómo esas historias se entrelazaban con el tejido. Entre las fibras parecían abrirse mundos enteros; creaba desde cero leyendas vivas con cada punto o urdimbre. La tela, a simple vista, es solo un material carente de significado; para mí guarda una carga, un legado, unas vivencias e historias que me han sido heredadas de generación en
+Mis recuerdos más vívidos son en compañia de mi abuela mientras ella tejía y me contaba historias; conforme pasaban las horas, mi imaginación volaba y veía cómo esas historias se entrelazaban con el tejido. Entre las fibras parecían abrirse mundos enteros; creaba desde cero leyendas vivas con cada punto o urdimbre. La tela, a simple vista, es solo un material carente de significado; para mí guarda una carga, un legado, unas vivencias e historias que me han sido heredadas de generación en
 generación. Mis mentoras siempre fueron figuras como mi abuela Rosa, mi abuela Mari Cruz, mi madre Ruth y mi tía Mari Sol. Ellas inculcaron en mí una pasión y un amor por lo textil.
 Es por ello que este trabajo no habla solo de mí, habla de todas nosotras.
   </p>
@@ -92,15 +93,16 @@ Es por ello que este trabajo no habla solo de mí, habla de todas nosotras.
   </section>
 
   <footer id="contacto">
-    <p>Contacto: correo@ejemplo.com</p>
-    <p>Tel: +34 123 456 789</p>
-    <p>&copy; 2025 Mi Sitio Web</p>
+    <p>Contacto: laura98moral@gmail.com</p>
+    <p>&copy; 2025 Laura Moral Miranda</p>
   </footer>
 
   <!-- Lightbox viewer -->
-  <div class="lightbox" id="lightbox">
-    <span class="close-btn" id="lightbox-close">&times;</span>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-img-desc">
+    <span class="close-btn" id="lightbox-close" role="button" tabindex="0" aria-label="Cerrar">&times;</span>
     <img class="lightbox-img" id="lightbox-img" src="" alt="Vista ampliada" />
+    <span id="lightbox-title" class="visually-hidden">Imagen ampliada</span>
+    <span id="lightbox-img-desc" class="visually-hidden">Pulse cerrar para volver al contenido principal</span>
   </div>
 
   <script src="src/js/script.js"></script>
