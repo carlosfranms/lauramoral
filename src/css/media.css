@@ -8,7 +8,9 @@
 @media (max-width: 768px) {
   header {
     align-items: flex-start;
+    box-shadow:0 2px 4px rgba(0,0,0,.3);
   }
+  
 
   nav {
     flex-direction: column;
@@ -17,7 +19,7 @@
   }
   .menu-toggle {
     display: block;
-    align-self: flex-end;
+    align-self: center;
   }
 
   .nav-links {
@@ -60,6 +62,7 @@
     top: calc(50% + 6rem); /* aparece debajo del título */
     font-size: clamp(0.55rem, 1.6vw, 0.8rem);
     padding: 1rem;
+    background-color: rgba(0, 0, 0, 0);
     /* position: absolute;
     top: calc(50% + 5rem); /* aparece debajo del título */
     /* left: 50%; */
@@ -78,6 +81,7 @@
     width: 90%;
     max-width: 80vw;
     height: 25vh;
+    background-color: rgba(0, 0, 0, 0.4);
     }
 
   .hero-description:hover p {
@@ -92,6 +96,10 @@
   .hero-overlay{
     width: 0;
   }
+  .scroll-icon{
+    margin-bottom: 5vh;
+  }
+
   .gallery-content {
     flex-direction: column;
   }

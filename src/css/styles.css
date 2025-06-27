@@ -19,7 +19,7 @@ header {
   /* linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.0)); */
   box-shadow:0 4px 8px rgba(0,0,0,.3);
   color: black;
-  padding: 0.4rem 3rem;
+  padding: 0.4rem 5vw;
   box-sizing: border-box ;
   z-index: 1000;
   display: flex;
@@ -62,7 +62,7 @@ nav a:hover {
 
 .menu-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 1.4vi + 0.6rem, 2rem);
   background: none;
   border: none;
   color: rgb(0, 0, 0);
