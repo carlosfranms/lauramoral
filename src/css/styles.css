@@ -17,7 +17,7 @@ header {
   width: 100%;
   background: white; 
   /* linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.0)); */
-  box-shadow:0 4px 8px rgba(0,0,0,.3);
+  /* box-shadow:0 4px 8px rgba(0,0,0,.3); */
   color: black;
   padding: 0.4rem 5vw;
   box-sizing: border-box ;
@@ -27,6 +27,20 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.site-header.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 header h1 {
   font-family: "Montserrat", sans-serif;
@@ -93,7 +107,7 @@ nav a:hover {
 
 .hero {
   height: 100vh;
-  background: url('../img/hero.jpg') no-repeat fixed top/cover;
+  background: url('../img/hero.jpg') no-repeat fixed bottom/90% 95%;
   color: rgb(255, 20, 20);
   text-shadow: 2px 2px 6px black;
   overflow-x: hidden;
@@ -130,6 +144,7 @@ nav a:hover {
   justify-content: center; /* centrado vertical */
   z-index: 1;
   height: 100vh;
+  padding-bottom: 15vh;
 }
 
 
@@ -141,7 +156,7 @@ nav a:hover {
   font-weight: 400;
   font-size: clamp(0.8rem, 3.5vi + 0.3rem, 10rem);
   line-height: 1.8;
-  letter-spacing: clamp(0.2rem, 1.0vi, 0.7rem);
+  letter-spacing: clamp(0.2rem, 1.2vi, 1rem);
   word-break: break-word;
   overflow-wrap: break-word;
   text-align: right;
@@ -155,7 +170,7 @@ nav a:hover {
   color: rgb(255, 20, 20);
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
-  font-size: clamp(0.7rem, 8vi+0.2rem, 8rem);
+  font-size: clamp(0.6rem, 8vi+0.2rem, 8rem);
   /* font-size: 1rem; */
   text-align: right;
   margin-top: -1rem;
@@ -259,7 +274,7 @@ nav a:hover {
 /* --- CONTENEDOR PRINCIPAL (texto + galería) --- */
 .parallax-section{
   height: auto;
-  /* width:100vw; */
+  min-height: 90vh; */
   padding:0;
   display:flex;
 }
@@ -275,7 +290,7 @@ nav a:hover {
 /* -------- Columna izquierda : texto -------- */
 .gallery-text{
   /* flex:0 0 50%;           ocupa mitad izquierda           */
-  width: 80%;
+  width: 90%;
   padding:1rem;
   /* overflow-y:auto;        scroll interno si hace falta    */
   height: auto;

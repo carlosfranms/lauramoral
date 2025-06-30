@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laura Moral</title>
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/media.css" />
+  <link rel="stylesheet" href="src/css/keyframes.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div>
+      <h1>Laura Moral
+        <br>
+        <span>
+          <p>Artista visual</p>
+        </span>
+      </h1>
+    </div>    
+
+    <!-- Botón hamburguesa -->
+     <!-- <div data-include="partials/nav.html"></div> -->
+
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <!-- <a href="statement.html">Statement</a> -->
+      <div class="dropdown">
+      <a href="works.html">
+      <button class="dropbtn">Obras &#x25BE;</button>
+      </a>
+      <div class="dropdown-content">
+        <a href="works/interpolaciones.html">Interpolaciones</a>
+        <a href="works/obra2.html">Obra 2</a>
+        <a href="works/obra3.html">Obra 3</a>
+        <a href="works/obra4.html">Obra 4</a>
+        <a href="works/obra5.html">Obra 5</a>
+        <a href="works/obra6.html">Obra 6</a>
+      </div>
+    </div>
+      <a href="bio.html">Curriculum</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+
+
+  <section class="parallax-section" id="parallax">
+  <div class="gallery-content">
+    <div class="gallery-text">
+      
+</div>
+    
+  </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Contacto: laura98moral@gmail.com</p>
+    <p>&copy; 2025 Laura Moral Miranda</p>
+  </footer>
+
+  <!-- Lightbox viewer -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-img-desc">
+    <span class="close-btn" id="lightbox-close" role="button" tabindex="0" aria-label="Cerrar">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Vista ampliada" />
+    <span id="lightbox-title" class="visually-hidden">Imagen ampliada</span>
+    <span id="lightbox-img-desc" class="visually-hidden">Pulse cerrar para volver al contenido principal</span>
+  </div>
+
+  
+  
+  <script src="src/js/script.js"></script>
+</body>
+</html>

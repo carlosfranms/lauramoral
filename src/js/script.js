@@ -35,3 +35,20 @@ document.getElementById('lightbox').addEventListener('click', e => {
     e.currentTarget.classList.remove('active');
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  let lastScroll = 0;
+  const header = document.querySelector('.site-header');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      header.classList.add('hide'); // hacia abajo
+    } else {
+      header.classList.remove('hide'); // hacia arriba
+    }
+
+    lastScroll = currentScroll;
+  });
+});
