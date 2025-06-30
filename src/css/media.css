@@ -58,6 +58,15 @@
     justify-content: space-between;
   }
 
+  .hero h2, .hero h3 {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .hero h3 {
+    margin-top: 0;
+    font-size: 0.6rem;
+  }
+
    .hero-description {
     top: calc(50% + 6rem); /* aparece debajo del título */
     font-size: clamp(0.55rem, 1.6vw, 0.8rem);
