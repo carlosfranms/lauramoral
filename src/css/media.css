@@ -62,14 +62,14 @@
     margin-right: 0px;
   }
   .hero h2 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    letter-spacing: 0.6rem;
+    font-size: clamp(1.5rem, 7vi, 7rem);
+    letter-spacing: 0.5rem;
     /* margin-bottom: 0.5rem; */
   }
   
   .hero h3 {
     margin-top: 0;
-    font-size: 0.6rem;
+    font-size: clamp(0.8rem, 3vi, 7rem);
   }
 
    .hero-description {
@@ -140,10 +140,6 @@
   nav a {
     font-size: 0.9rem;
   }
-
-  /* .hero h2, .hero h3, .parallax-section h3 {
-    font-size: 0.5rem; 
-  } */
 
   .hero h2{
     letter-spacing: 0.4rem;
