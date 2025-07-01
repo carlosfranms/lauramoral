@@ -274,8 +274,8 @@ nav a:hover {
 /* --- CONTENEDOR PRINCIPAL (texto + galería) --- */
 .parallax-section{
   height: auto;
-  min-height: 90vh; */
-  padding:0;
+  min-height: 90vh; 
+  padding: 0;
   display:flex;
 }
 .gallery-content{

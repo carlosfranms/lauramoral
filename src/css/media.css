@@ -11,7 +11,6 @@
     box-shadow:0 2px 4px rgba(0,0,0,.3);
   }
   
-
   nav {
     flex-direction: column;
     gap: 0.5rem;
@@ -62,6 +61,12 @@
     text-align: center;
     margin-right: 0px;
   }
+  .hero h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    letter-spacing: 0.6rem;
+    /* margin-bottom: 0.5rem; */
+  }
+  
   .hero h3 {
     margin-top: 0;
     font-size: 0.6rem;
