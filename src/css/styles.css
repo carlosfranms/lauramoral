@@ -1,5 +1,13 @@
 /* styles.css */
-
+:root{
+  --bg-dark:      #1B1B1B;
+  --bg-light:     #F5F3EE;
+  --bg-light-t:   rgba(245, 243, 238, 0.9);
+  --accent-red:   #C42B30;
+  --accent-red-2: #E57A6F;
+  --accent-teal:  #2C7C79;
+  --accent-gold:  #C5A66A;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +17,17 @@ body, html {
   font-family: 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background: var(--bg-light);
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white; 
+  background: var(--bg-light); 
   /* linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.0)); */
   /* box-shadow:0 4px 8px rgba(0,0,0,.3); */
-  color: black;
+  color: var(--bg-dark);
   padding: 0.4rem 5vw;
   box-sizing: border-box ;
   z-index: 1000;
@@ -51,7 +60,7 @@ header h1 {
   letter-spacing: 0.1rem;
 }
 header h1 p {
-  color: black;
+  color: var(--bg-dark);
   font-size: clamp(0.4rem, 0.34vi + 0.6rem, 1.19rem);
   margin-left: 1rem;
 }
@@ -64,14 +73,14 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: var(--bg-dark);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ee1616;
+  color: var(--accent-red-2);
 }
 
 .dropdown { position:relative; }
@@ -86,7 +95,8 @@ nav a:hover {
 }
 .dropdown-content {
   display:none; position:absolute; top:100%; left:0;
-  background:rgba(255,255,255,.9); padding:.5rem 0;
+  background:var(--bg-light-t);
+  padding:.5rem 0;
 }
 .dropdown-content a { display:block; padding:.5rem 1rem; white-space:nowrap; }
 
@@ -149,7 +159,9 @@ nav a:hover {
 
 
 .hero h2 {
-  font-family: "Alex Brush", cursive;
+  
+  font-family: "Allura", cursive;
+  /* font-family: "Alex Brush", cursive; */
   /* font-family: "Emblema One", system-ui; */
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 6px black;
@@ -167,7 +179,7 @@ nav a:hover {
 .hero h3{
   /* font-family: "Alex Brush", cursive; */
   font-family: "Emblema One", system-ui;
-  color: rgb(255, 20, 20);
+  color: --accent-red;
   text-shadow: 2px 2px 6px black;
   font-weight: 400;
   font-size: clamp(0.6rem, 8vi+0.2rem, 8rem);
@@ -266,7 +278,7 @@ nav a:hover {
 
 .scroll-icon:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: var(--bg-light);
 }
 
 
@@ -337,7 +349,8 @@ nav a:hover {
   object-fit:cover;       /* recorta exceso sin deformar     */
   border-radius:3px;
   box-shadow:0 4px 8px rgba(0,0,0,.3);
-  transition:transform .3s ease, box-shadow .3s ease;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -348,7 +361,10 @@ nav a:hover {
 
 /* Efecto hover opcional */
 .gallery img:hover{
+  border: 2px solid;
   transform:scale(1.02);
+  border-color: var(--accent-teal);
+  box-shadow: 0 6px 12px rgba(44, 124, 121, 0.4);
   /* animation-name: bounce;
   animation-duration: 1s;
   animation-timing-function: ease-in-out; */
