@@ -409,7 +409,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
-  gap: 0.5rem;
+  gap: 2rem;
   padding: 1rem;
   animation: fade-in 0.5s ease-in-out;
 }
