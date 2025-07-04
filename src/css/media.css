@@ -102,6 +102,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
   }
+  .gallery.three-only {
+    grid-template-columns: 1fr;
+  }
   .works{
     flex: 1 1 100%;
     padding: 1rem;
@@ -129,6 +132,9 @@
   .gallery {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
+  }
+  .gallery.three-only {
+    grid-template-columns: 1fr;
   }
   .gallery img.vertical {
     grid-row: span 1;

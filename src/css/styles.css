@@ -377,6 +377,9 @@ nav a:hover {
   /* height: 100%; */
   /* box-sizing: border-box; */
 }
+.gallery.three-only {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .gallery img{
   width:100%;
