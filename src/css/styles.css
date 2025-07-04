@@ -468,6 +468,26 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+.contact-social {
+  margin-top: 0rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-social a {
+  color: var(--bg-light); /* o el que uses */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(26%) sepia(92%) saturate(522%) hue-rotate(338deg) brightness(98%) contrast(91%);
+}
+
 .lightbox {
   position: fixed;
   top: 0;
