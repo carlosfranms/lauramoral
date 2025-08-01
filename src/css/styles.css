@@ -248,7 +248,13 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  
+}
+
+.hero-description a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: normal;
+  /* font-size: clamp(0.8rem, 1.2vw + 0.3rem, 1.5rem); */
 }
 
 .hero-description p {
