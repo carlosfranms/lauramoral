@@ -70,7 +70,7 @@
     font-size: clamp(0.55rem, 1.6vw, 0.8rem);
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0);
-   
+    text-decoration: none;
   }
   .hero-description:hover {
     width: 90%;
