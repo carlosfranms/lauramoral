@@ -84,6 +84,30 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+lightbox.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+lightbox.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleGesture();
+}, false);
+
+function handleGesture() {
+  const diff = touchEndX - touchStartX;
+  if (Math.abs(diff) > 50) {
+    if (diff > 0 && currentIndex > 0) {
+      showImage(currentIndex - 1); // swipe derecha → imagen anterior
+    } else if (diff < 0 && currentIndex < galleryImages.length - 1) {
+      showImage(currentIndex + 1); // swipe izquierda → imagen siguiente
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   let lastScroll = 0;
   const header = document.querySelector('.site-header');
