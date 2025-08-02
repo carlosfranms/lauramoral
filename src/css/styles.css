@@ -461,14 +461,15 @@ nav a:hover {
   border-radius:3px;
   box-shadow:0 4px 8px rgba(0,0,0,.3);
   border: 2px solid transparent;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .works figcaption {
   width: 100%;
-  height: 3rem;
+  height: 6rem;
   text-align: center;
   font-size: clamp(0.6rem, 1.2vi + 0.3rem, 1.5rem);
   color: var(--bg-dark);
+  
 }
 
 footer {
