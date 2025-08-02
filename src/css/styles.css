@@ -469,7 +469,6 @@ nav a:hover {
   text-align: center;
   font-size: clamp(0.6rem, 1.2vi + 0.3rem, 1.5rem);
   color: var(--bg-dark);
-  margin-bottom: 1rem;
 }
 
 footer {
